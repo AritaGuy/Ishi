@@ -1,0 +1,35 @@
+{
+    "rooms": [
+      {
+        "id": 1,
+        "name": "Room 1",
+        "image": "./images/room1.jpeg",
+        "description": "Mountain View"
+
+      },
+      {
+        "id": 2,
+        "name": "Buzz Lightyear",
+        "image": "./images/room2.jpeg",
+        "description": "Single Room"
+      },
+      {
+        "id": 2,
+        "name": "Room 2",
+        "image": "./images/room3.jpeg",
+        "description": "Double Room"
+      },
+      {
+        "id": 2,
+        "name": "Room 3",
+        "image": "./images/room3.jpeg",
+        "description": "Triple Room"
+      },
+      {
+        "id": 2,
+        "name": "Room 4",
+        "image": "./images/room3.jpeg",
+        "description": "Quad Room"
+      }
+    ]
+  }
