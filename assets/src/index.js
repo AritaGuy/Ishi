@@ -23,3 +23,17 @@ function getRooms(){
     }
     )
 }
+let but = document.querySelectorAll('#sidebar .select')
+  //getting the room's details
+    for (let i of but) {
+        hello =room1.textContent
+      i.addEventListener("click", (e) => {
+        document.querySelector('#booking-details').style.display = "block"
+        fetch(`http://localhost:3000/rooms/${i.name}`)
+        .then(resp=>resp.json())
+        .then(room=>{
+            // document.querySelector('h6').innerHTML = room.id
+            document.querySelector('h4').textContent = room.name
+            document.querySelector('#room-pic').src = room.image
+            document.querySelector('#desc').textContent = room.description
+            
