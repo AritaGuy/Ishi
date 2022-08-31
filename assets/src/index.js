@@ -50,3 +50,21 @@ let but = document.querySelectorAll('#sidebar .select')
                   method: 'PATCH',
                   headers : {'Content-Type':'application/json'},
                   body : JSON.stringify(token)
+              }).then(res => res.json())
+              .then(hostelroom=>{
+                  //confirmation message
+                  document.querySelector('#booking-details').style.display = "none"
+                  document.querySelector('#confirm-form').style.display = "block"
+                  document.querySelector('#confirmation_message').textContent = `
+                  You have booked ${hostelroom.name}, your payment token is 
+                  ${hostelroom.paymenttoken}`
+
+              } ).catch(error=>{
+                  console.log(error.message)
+              })
+            }
+            )
+
+        })
+      });
+    }
