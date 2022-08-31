@@ -17,7 +17,7 @@ body{
     display: flex;
 }
 #sidebar{
-    height: 715px;
+    height: 700px;
     width: 150px; 
     background-color: #A5C9CA;
     /* float: left; */
@@ -25,6 +25,7 @@ body{
     /* position: relative; */
     margin-top: 10px;
     display: block;
+    text-align: center;
 }
 #midbar{
     margin-left: 170px;
@@ -58,15 +59,15 @@ body{
     border-bottom: solid white 3px;
 }
 
-#select{
-    height: 60px;
+.select{
+    height: 40px;
     width: 120px;
-    margin-top: 50px;
+    margin-top: 40px;
     margin-left: 15px;
     background: none;
     border-style: none;
 }
-#select:hover{
+.select:hover{
     border-bottom: solid white 3px;
     
 }
@@ -112,24 +113,29 @@ body{
 #booking-form{
     display: none;
     box-sizing: border-box;
-    height: 550px;
-    width: 80%;
-    background-color: #395B64;
-    opacity: 0.7;
-    position: relative;
-    margin-left: 100px;
-    top: 10px;
-    bottom: 40px;
+    height: 100px;
+    width: 50%;
+    background-color: none;
+    /* opacity: 0.7; */
+    /* position: relative; */
+    margin-left: 200px;
+    top: 830px;
+    /* bottom: 40px; */
     text-align: center;
     /* visibility: hidden; */
+    padding-top: 6px;
+    box-shadow: 8px 13px 14px -1px rgba(0,0,0,0.22);
+    -webkit-box-shadow: 8px 13px 14px -1px rgba(0,0,0,0.22);
+    -moz-box-shadow: 8px 13px 14px -1px rgba(0,0,0,0.22);
 } 
 #hostel{
     border-style: none;
     height: 40px;
     width: 200px;
+    padding-top: 4px;
 }
-#submitButton{
-    margin-top: 45px;
+#book-Button{
+    top: 650px;
     height: 40px;
     width: 150px;
     color: beige;
@@ -139,6 +145,11 @@ body{
     font-weight: 900;
     
 }
+
+#book-Button:hover{
+    opacity: 0.5;
+}
+
 #blocktype{
     border-style: none;
     height: 40px;
@@ -156,28 +167,73 @@ body{
     width: 80%;
     background-color: #395B64;
     opacity: 0.7;
-    position: relative;
-    margin-left: 100px;
-    top: 10px;
+    position: absolute;
+    margin-left: 200px;
+    top: 250px;
     bottom: 40px;
     text-align: center;
-    /* visibility: hidden; */
+    
 } 
-.details{
+/* .details{
     height: 100px;
     width : 40%;
     background-color: white;
     font-weight: bold;
     font-size: large;
     margin-left: 250px;
-}
+} */
 #buttondiv{
     
     margin-right: 10px;
     
 }
 #student_info{
-    margin-left: 500px;
+    margin-left: 800px;
     padding-top: 50px;
     
+}
+
+#booking-details{
+    display: none;
+    box-sizing: border-box;
+    height: 680px;
+    width: 80%;
+    background-color: #395B64;
+    /* opacity: 0.7; */
+    position: relative;
+    margin-left: 5%;
+    top : 5px;
+    bottom: 40px;
+    text-align: center;
+}
+#room-pic{
+    height: 60%;
+    width: 60%;
+    position: relative;
+    top: 10px;
+    
+}
+h4{
+    top: 20px; 
+    position: relative;
+}
+#desc{
+    top :10px
+}
+#bookform{
+    /* margin-top: 30px; */
+}
+#Submit{
+    /* top: 650px; */
+    height: 40px;
+    width: 100px;
+    color: beige;
+    background-color: #A5C9CA;
+    font-size: large;
+    border-style: none;
+    font-weight: 900;
+}
+
+#Submit:hover{
+    opacity: 0.5;
 }
