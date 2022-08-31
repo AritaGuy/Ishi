@@ -37,3 +37,16 @@ let but = document.querySelectorAll('#sidebar .select')
             document.querySelector('#room-pic').src = room.image
             document.querySelector('#desc').textContent = room.description
             
+            //updating the payment token on the server
+            document.querySelector('#bookform').addEventListener('submit', (e)=>{
+                e.preventDefault()
+               
+                let token = { 
+                  paymenttoken : document.querySelector('#hostel').value
+              }
+              
+              console.log(token)
+              fetch(`http://localhost:3000/rooms/${room.id}`, {
+                  method: 'PATCH',
+                  headers : {'Content-Type':'application/json'},
+                  body : JSON.stringify(token)
