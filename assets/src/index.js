@@ -68,3 +68,9 @@ let but = document.querySelectorAll('#sidebar .select')
         })
       });
     }
+
+//displaying the payemnt token form
+document.querySelector('#book-Button').addEventListener('click', (()=>{
+    document.querySelector('#booking-form').style.display = "block"
+}))
+
