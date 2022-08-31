@@ -16,10 +16,10 @@
 <body>
     <div id="topbar">
         <div id="logo">
-            <img src="./assets/images/moringa_hostel.png" alt="">
+            <img id="logo"src="" alt="">
         </div>
         <div id="Head">
-            <h1>Moringa Smart Hostel</h1>
+            <h1>Ishi</h1>
         </div>
         <div id="student_info">
             <p>Sam Arita</p>
@@ -29,57 +29,38 @@
         </div>
     </div>
     <div id="sidebar">
-        <button id="select">Book</button>
-        <button id="select">Status</button>
-        <button id="select">Room-mates</button>
-        <a href="../index.html">
-        <button id="select">Return Home</button></a>
+        <h2>Available rooms</h2>
+        <button id="room_1" class="select" name = "1"></button>
+        <button id="room_2" class="select" name = "2"></button>
+        <button id="room_3" class="select" name = "3"></button>
+        <button id="room_4" class="select" name = "4"></button>
+        <button id="room_5" class="select" name = "5"></button>
+        
     </div>
     <div id="midbar">
-        <div id="booking-form">
-            <h1>Book a room</h1>
-            <form id="bookform">
-                <label for="gender">
-                    <h3>Hostel</h3>
-                </label><br />
-                <select id="hostel" name="hostel">
-                    <option value="Hostel A">A</option>
-                    <option value="Hostel B">B</option>
-                    <OPTion value="Hostel C">C</OPTion>
-                </select><br />
-                <label for="Block">
-                    <h3>Type of room</h3>
-                </label><br />
-                <select id="blocktype" name="blocktype">
-                    <option value="Single" name="single">Single</option>
-                    <option value="Shared" name="single">Shared</option>
-                </select><br />
-                <label for="gender">
-                    <h3>Room number</h3>
-                </label><br />
-                <select id="room" name="room">
-                    <option value="Room 1" name="room1">1</option>
-                    <option value="Room 2" name="room2">2</option>
-                    <option value="Room 3" name="room3">3</option>
-                </select><br />
-                <button type="submit" id="submitButton">Submit</button>
-            </form>
-            </form>
+            <div id=booking-details>
+                <!-- <h6 id="room_Id"></h6> -->
+                <h4></h4>
+                <img id="room-pic" src="" alt="">
+                <p id="desc"></p>
+                <button type="button" id="book-Button">Book</button>
+                <div id="booking-form">
+                    <form id="bookform" action="#" method="POST">
+                        <label for="new-task-description">Enter payment token:</label><br />
+                        <input type="text" id="hostel" name="new-task" placeholder="description">
+                        <input type="submit" value="Submit" id="Submit">
+                    </form>
+                </div>
+            </div>
         </div>
         <div id="confirm-form">
             <h2>Congratulations, booking successful!!!</h2><br/>
             <div class="details" id="message1">
-                <h3 id="confirm"></h3>
+                <p id="confirmation_message"></p>
             </div>
-            <div class="details" id="message2">
-                <h3></h3>
-            </div>
-            <div class="details" id="message3">
-                <h3></h3>
-            </div>
-        </div>
+        </div>  
     </div>
-    <script src="../dashboard/assets/script/index.js"></script>
+    <script src="./assets/src/index.js"></script>
 </body>
 
 </html>
