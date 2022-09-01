@@ -56,7 +56,7 @@ let but = document.querySelectorAll('#sidebar .select')
                   document.querySelector('#booking-details').style.display = "none"
                   document.querySelector('#confirm-form').style.display = "block"
                   document.querySelector('#confirmation_message').textContent = `
-                  You have booked ${hostelroom.name}, Your payment token is 
+                  You have booked ${hostelroom.name}, your payment token is 
                   ${hostelroom.paymenttoken}`
 
               } ).catch(error=>{
@@ -74,3 +74,13 @@ document.querySelector('#book-Button').addEventListener('click', (()=>{
     document.querySelector('#booking-form').style.display = "block"
 }))
 
+document.querySelector('#student_info').addEventListener('mouseover', ()=>{
+    
+    document.querySelector('#more-details').style.display = "block"
+  
+})
+document.querySelector('#student_info').addEventListener('mouseout', ()=>{
+    
+    document.querySelector('#more-details').style.display = "none"
+  
+})
