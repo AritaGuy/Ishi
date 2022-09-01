@@ -53,11 +53,12 @@ let but = document.querySelectorAll('#sidebar .select')
               }).then(res => res.json())
               .then(hostelroom=>{
                   //confirmation message
-                  document.querySelector('#booking-details').style.display = "none"
+                document.querySelector('#booking-details').style.display = "none"
                   document.querySelector('#confirm-form').style.display = "block"
+                  
                   document.querySelector('#confirmation_message').textContent = `
-                  You have booked ${hostelroom.name}, your payment token is 
-                  ${hostelroom.paymenttoken}`
+                  You have booked ${hostelroom.name}, Your payment token is 
+                 ${hostelroom.paymenttoken}`
 
               } ).catch(error=>{
                   console.log(error.message)
@@ -66,6 +67,10 @@ let but = document.querySelectorAll('#sidebar .select')
             )
 
         })
+        if (document.querySelector('#confirm-form').style.display = "block")
+        document.querySelector('#confirm-form').style.display = 'none'
+        document.querySelector('#bookform').reset()
+        document.querySelector('#booking-form').style.display = 'none'
       });
     }
 
@@ -84,3 +89,6 @@ document.querySelector('#student_info').addEventListener('mouseout', ()=>{
     document.querySelector('#more-details').style.display = "none"
   
 })
+
+
+

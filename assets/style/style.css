@@ -77,15 +77,44 @@ body{
    margin-top: 20px;
    margin-left: 10px;
 }
-@media (min-width:320px)  { 
+@media (min-width:320px) and (max-width:500px)  { 
 
     /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
 }
-@media (max-width:480px)  { 
-    #html{
+@media (min-width:500px) and (max-width:1000px)  { 
+
+    #mid-bar{
+        /* display: none; */
+        box-sizing: border-box;
+        height: 680px;
+        width: 300px;
+        background-color: pink;
+        margin-left : 0px;
+        /* opacity: 0.7; */
+        /* position: relative;
+        margin-left: 5%;
+        top : 5px;
+        bottom: 40px;
+        text-align: center; */ 
+    }
+
+    #sidebar{
+        display: block;
+        width: 50px;
+    }
+    
+    #room-pic{
+        height: 100px;
+        width: 100px;
+        /* position: relative; */
+        top: 10px;
+        
+    }
+
+    html{
         position: absolute;
     }    
-    #body{ /*margin-left: 20px;
+    body{ /*margin-left: 20px;
           margin-right: 20px; */
           width: 450px;
           height: 700px;
@@ -166,7 +195,7 @@ body{
     height: 550px;
     width: 80%;
     background-color: #395B64;
-    opacity: 0.7;
+    /* opacity: 0.7; */
     position: absolute;
     margin-left: 200px;
     top: 250px;
@@ -188,10 +217,12 @@ body{
     
 }
 #student_info{
-    margin-left: 800px;
+    margin-left: 750px;
     padding-top: 50px;
     
 }
+
+
 
 #booking-details{
     display: none;
@@ -220,9 +251,7 @@ h4{
 #desc{
     top :10px
 }
-#bookform{
-    /* margin-top: 30px; */
-}
+
 #Submit{
     /* top: 650px; */
     height: 40px;
@@ -236,4 +265,13 @@ h4{
 
 #Submit:hover{
     opacity: 0.5;
+}
+#more-details{
+    display: none;
+    height: 100px;
+    width: 150px;
+    position: absolute;
+    text-align: center;
+    background-color: blue;
+    margin-left: -10px;
 }

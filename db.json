@@ -5,35 +5,35 @@
       "name": "Room 1",
       "image": "./images/room1.jpeg",
       "description": "Mountain View",
-      "paymenttoken": "83948U3-"
+      "paymenttoken": "asds"
     },
     {
       "id": 2,
       "name": "Room 2",
       "image": "./images/room2.jpeg",
       "description": "Single Room",
-      "paymenttoken": "Go for morning run"
+      "paymenttoken": "asfa"
     },
     {
       "id": 3,
       "name": "Room 3",
       "image": "./images/room3.jpeg",
       "description": "Double Room",
-      "paymenttoken": "ju"
+      "paymenttoken": "asfa"
     },
     {
       "id": 4,
       "name": "Room 4",
       "image": "./images/room4.jpeg",
       "description": "Triple Room",
-      "paymenttoken": "ju"
+      "paymenttoken": "asds"
     },
     {
       "id": 5,
       "name": "Room 5",
       "image": "./images/room5.jpeg",
       "description": "Quad Room",
-      "paymenttoken": "ju"
+      "paymenttoken": "asds"
     },
     {
       "paymenttoken": "Go for morning run",
