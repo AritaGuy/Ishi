@@ -56,7 +56,7 @@ let but = document.querySelectorAll('#sidebar .select')
                   document.querySelector('#booking-details').style.display = "none"
                   document.querySelector('#confirm-form').style.display = "block"
                   document.querySelector('#confirmation_message').textContent = `
-                  You have booked ${hostelroom.name}, your payment token is 
+                  You have booked ${hostelroom.name}, Your payment token is 
                   ${hostelroom.paymenttoken}`
 
               } ).catch(error=>{
