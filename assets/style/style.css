@@ -268,10 +268,31 @@ h4{
 }
 #more-details{
     display: none;
-    height: 100px;
+    height: 200px;
     width: 150px;
     position: absolute;
     text-align: center;
     background-color: blue;
     margin-left: -10px;
+}
+.roundedImage {
+    /* position: relative; */
+    margin-left: 40px;
+    margin-top: 20px;
+    background: url(./images/image.png);
+    background-repeat: no-repeat;
+    background-color: pink;
+    background-size: cover;
+   
+    overflow:hidden;
+    -webkit-border-radius:20px;
+    -moz-border-radius:20px; 
+    border-radius:50%;
+    width:70px;
+    height:70px;
+}
+.roundedImage img{
+    position: relative;
+    width: 60%;
+    height: 100%;
 }
